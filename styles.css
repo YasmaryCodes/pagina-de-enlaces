@@ -1,82 +1,66 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #e0bbf7, #b87edb);
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #c684f5, #aa59d4);
+  color: white;
   text-align: center;
-  min-height: 100vh;
 }
 
 .container {
-  width: 90%;
-  max-width: 400px;
+  max-width: 480px;
+  margin: auto;
   padding: 20px;
 }
 
 .logo {
-  width: 130px;
+  width: 120px;
+  border-radius: 16px;
   margin-bottom: 10px;
-  border-radius: 20px;
 }
 
 h1 {
-  font-size: 2em;
   margin: 0;
-  color: #ffffff;
+  font-size: 2em;
 }
 
 .frase {
-  font-size: 1.1em;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1em;
+  font-style: italic;
   color: #f5f5f5;
 }
 
 .social-icons {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 .social-icons a {
-  margin: 0 10px;
-  font-size: 1.4em;
-  color: #fff;
-  transition: transform 0.3s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
+  color: white;
+  margin: 0 8px;
+  font-size: 1.2em;
 }
 
 .link-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4b0082;
-  color: #fff;
-  border: 2px solid #fff;
+  gap: 10px;
+  background-color: #4d007d;
   border-radius: 30px;
-  padding: 12px 18px;
-  margin: 12px 0;
+  padding: 14px 18px;
+  color: white;
   text-decoration: none;
-  font-size: 1em;
-  transition: background 0.3s, transform 0.3s;
+  margin: 10px auto;
+  max-width: 320px;
+  transition: transform 0.2s ease;
+  font-size: 1.1em;
 }
 
 .link-button:hover {
-  background-color: #6a0dad;
-  transform: scale(1.05);
+  transform: scale(1.04);
+  background-color: #5a0091;
 }
 
-.icon-left {
-  margin-right: 10px;
+.link-button i {
   font-size: 1.3em;
-}
-
-.subtitle {
-  display: block;
-  font-size: 0.85em;
-  opacity: 0.85;
-  color: #ddd;
 }
