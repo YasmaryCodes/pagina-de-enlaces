@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background: linear-gradient(135deg, #e6ccff, #d9b3ff);
-  color: #fff;
+  background: linear-gradient(135deg, #c9e3f5, #e3d0f7);
+  color: #000;
   text-align: center;
 }
 
@@ -20,12 +20,13 @@ body {
   object-fit: cover;
   border-radius: 100%;
   margin-bottom: 10px;
-  border: 3px solid white;
+  border: 2px solid #000;
 }
 
 h1 {
   font-size: 32px;
   margin: 10px 0;
+  font-weight: bold;
 }
 
 .frase {
@@ -34,36 +35,65 @@ h1 {
 }
 
 .iconos-redes i {
-  font-size: 20px;
-  margin: 0 8px;
-  color: white;
+  font-size: 22px;
+  margin: 0 10px;
+  color: #000;
 }
 
 .links {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .link {
-  background-color: #000000dd;
+  background-color: #000;
   color: white;
-  padding: 12px 20px;
-  border-radius: 30px;
+  padding: 14px 20px;
+  border-radius: 40px;
   text-decoration: none;
   font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background 0.3s ease;
+  font-family: 'Playfair Display', serif;
 }
 
 .link i {
-  margin-right: 10px;
-  font-size: 20px;
+  font-size: 24px;
+  margin-right: 12px;
 }
 
 .link:hover {
-  background-color: #444;
+  background-color: #333;
+}
+
+/* Enlace con logo a la izquierda y texto con subtítulo */
+.link-logo {
+  justify-content: flex-start;
+  padding-left: 16px;
+}
+
+.icono-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.textos span {
+  font-size: 18px;
+}
+
+.textos small {
+  font-size: 12px;
+  color: #ccc;
 }
