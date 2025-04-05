@@ -41,10 +41,8 @@ h1 {
 }
 
 .link-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  position: relative;
+  display: block;
   background-color: #4d007d;
   border-radius: 30px;
   padding: 14px 18px;
@@ -52,8 +50,8 @@ h1 {
   text-decoration: none;
   margin: 10px auto;
   max-width: 320px;
-  transition: transform 0.2s ease;
   font-size: 1.1em;
+  transition: transform 0.2s ease;
 }
 
 .link-button:hover {
@@ -61,6 +59,15 @@ h1 {
   background-color: #5a0091;
 }
 
-.link-button i {
+.link-button .icon-left {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 1.3em;
+}
+
+.link-button .text {
+  display: block;
+  text-align: center;
 }
