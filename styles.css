@@ -1,99 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-
 body {
   margin: 0;
-  font-family: 'Playfair Display', serif;
-  background: linear-gradient(135deg, #c9e3f5, #e3d0f7);
-  color: #000;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0bbf7, #b87edb);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  min-height: 100vh;
 }
 
 .container {
+  width: 90%;
   max-width: 400px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 .logo {
   width: 130px;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 100%;
   margin-bottom: 10px;
-  border: 2px solid #000;
+  border-radius: 20px;
 }
 
 h1 {
-  font-size: 32px;
-  margin: 10px 0;
-  font-weight: bold;
+  font-size: 2em;
+  margin: 0;
+  color: #ffffff;
 }
 
 .frase {
-  font-size: 16px;
-  margin-bottom: 15px;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #f5f5f5;
 }
 
-.iconos-redes i {
-  font-size: 22px;
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
   margin: 0 10px;
-  color: #000;
+  font-size: 1.4em;
+  color: #fff;
+  transition: transform 0.3s;
 }
 
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 30px;
+.social-icons a:hover {
+  transform: scale(1.2);
 }
 
-.link {
-  background-color: #000;
-  color: white;
-  padding: 14px 20px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-size: 18px;
+.link-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s ease;
-  font-family: 'Playfair Display', serif;
+  background-color: #4b0082;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 12px 18px;
+  margin: 12px 0;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background 0.3s, transform 0.3s;
 }
 
-.link i {
-  font-size: 24px;
-  margin-right: 12px;
+.link-button:hover {
+  background-color: #6a0dad;
+  transform: scale(1.05);
 }
 
-.link:hover {
-  background-color: #333;
+.icon-left {
+  margin-right: 10px;
+  font-size: 1.3em;
 }
 
-/* Enlace con logo a la izquierda y texto con subtítulo */
-.link-logo {
-  justify-content: flex-start;
-  padding-left: 16px;
-}
-
-.icono-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  margin-right: 15px;
-}
-
-.textos {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.textos span {
-  font-size: 18px;
-}
-
-.textos small {
-  font-size: 12px;
-  color: #ccc;
+.subtitle {
+  display: block;
+  font-size: 0.85em;
+  opacity: 0.85;
+  color: #ddd;
 }
